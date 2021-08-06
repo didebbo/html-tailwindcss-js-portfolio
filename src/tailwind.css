@@ -13,7 +13,7 @@
   }
 
   .item {
-    @apply flex w-11/12 justify-start;
+    @apply flex justify-start w-11/12;
   }
 
   .col {
@@ -21,7 +21,7 @@
   }
 
   .box {
-    @apply flex flex-col items-center w-full px-8 py-3 my-3;
+    @apply flex flex-col items-center w-full px-8 py-3;
   }
 
   #avatar {
@@ -53,7 +53,7 @@
   }
 
   .info i {
-    @apply my-2;
+    @apply my-1;
   }
 
   .main-header {
@@ -61,20 +61,25 @@
   }
 
   .main-header > .title {
-    @apply mb-6;
+    @apply mb-3;
   }
 
   .main-header > .title > h2 {
-    @apply text-4xl font-bold pb-3;
+    @apply text-3xl font-bold pb-3;
   }
 
   .main-header > .title > .border-bottom {
     @apply h-1 w-1/2 bg-indigo-400;
   }
 
-  .main-content > .title > h3 {
-    @apply text-3xl font-bold mt-3 mb-6;
+  .main-header > .subtitle {
+    @apply text-sm my-3;
   }
+
+  .main-content > .title > h3 {
+    @apply text-2xl font-bold my-3;
+  }
+
 
   .main-content > .card-list {
     @apply flex flex-row flex-wrap w-full -mx-3;
@@ -85,7 +90,7 @@
   }
 
   .main-content > .card-list > .card > .inner {
-    @apply p-6 flex bg-gray-50 w-full rounded-2xl;
+    @apply p-3 flex bg-gray-50 w-full rounded-2xl;
   }
 
   .main-content > .card-list > .card > .inner > i {
@@ -97,11 +102,11 @@
   }
 
   .main-content > .card-list > .card > .inner > .content > h4 {
-    @apply text-2xl font-bold;
+    @apply text-lg font-bold;
   }
 
   .main-content > .card-list > .card > .inner > .content > p {
-    @apply text-sm text-gray-600;
+    @apply text-xs text-gray-600;
   }
 
   .main-content > .card-list > .card > .inner > .content > p > span {
