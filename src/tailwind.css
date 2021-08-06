@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  body {
+    @apply h-screen bg-fixed bg-gradient-to-br from-blue-300 to-indigo-600 font-mono;
+  }
+
+  .container {
+    @apply mx-auto h-full flex justify-center items-center;
+  }
+
+  .item {
+    @apply flex justify-center items-center;
+  }
+
+  .col {
+    @apply bg-white rounded-3xl overflow-hidden flex flex-col items-center;
+  }
+
+  .box {
+    @apply flex flex-col justify-center items-center w-full px-4 py-3 my-3;
+  }
+
+  #avatar {
+    @apply w-32 rounded-full;
+  }
+
+  .badge {
+    @apply text-lg bg-gray-200 py-2 px-4 rounded-full;
+  }
+
+  .btn {
+    @apply bg-gray-200 text-black py-2 px-4 rounded-full
+  }
+
+  #linkedin-icon {
+    @apply text-linkedin;
+  }
+
+  #twitter-icon {
+    @apply text-twitter;
+  }
+
+  #instagram-icon {
+    @apply text-transparent bg-clip-text bg-gradient-to-tr from-yellow-400 to-pink-600;
+  }
+
+  #facebook-icon {
+    @apply text-facebook;
+  }
+
+  .info i {
+    @apply my-2;
+  }
+}
