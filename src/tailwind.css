@@ -64,6 +64,11 @@
     @apply  flex overflow-hidden w-0 whitespace-nowrap transition-all;
   }
 
+  nav > .menu > li::after {
+    content: "|";
+    @apply text-indigo-700 mr-3;
+  }
+
   nav > .menu.show-menu {
     @apply w-auto btn bg-indigo-500 text-white rounded-tr-none rounded-br-none;
   }
@@ -73,7 +78,7 @@
   }
 
   nav > #toggle-menu.focus {
-    @apply rounded-tl-none rounded-bl-none
+    @apply rounded-tl-none rounded-bl-none;
   }
 
   .main-header {

@@ -703,6 +703,13 @@ nav > .menu {
   transition-duration: 150ms;
 }
 
+nav > .menu > li::after {
+  content: "|";
+  margin-right: 0.75rem;
+  --tw-text-opacity: 1;
+  color: rgba(67, 56, 202, var(--tw-text-opacity));
+}
+
 nav > .menu.show-menu {
   border-radius: 9999px;
   --tw-bg-opacity: 1;
@@ -743,7 +750,7 @@ nav > #toggle-menu {
 
 nav > #toggle-menu.focus {
   border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px
+  border-bottom-left-radius: 0px;
 }
 
 .main-header {
