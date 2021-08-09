@@ -82,11 +82,11 @@
 
 
   .main-content > .card-list {
-    @apply flex flex-row flex-wrap w-full -mx-3;
+    @apply grid grid-cols-2 auto-rows-fr gap-3 w-full;
   }
 
   .main-content > .card-list > .card {
-    @apply w-1/2 p-3;
+    @apply flex flex-row;
   }
 
   .main-content > .card-list > .card > .inner {
