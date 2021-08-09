@@ -56,6 +56,26 @@
     @apply my-1;
   }
 
+  nav {
+    @apply absolute flex items-center right-3 top-3;
+  }
+
+  nav > .menu {
+    @apply  flex overflow-hidden w-0 whitespace-nowrap transition-all;
+  }
+
+  nav > .menu.show-menu {
+    @apply w-auto btn bg-indigo-500 text-white rounded-tr-none rounded-br-none;
+  }
+
+  nav > #toggle-menu {
+    @apply btn text-white bg-indigo-500 transition-all;
+  }
+
+  nav > #toggle-menu.focus {
+    @apply rounded-tl-none rounded-bl-none
+  }
+
   .main-header {
     @apply flex flex-col items-start;
   }
@@ -69,7 +89,7 @@
   }
 
   .main-header > .title > .border-bottom {
-    @apply h-1 w-1/2 bg-indigo-400;
+    @apply h-1 w-1/2;
   }
 
   .main-header > .subtitle {
@@ -94,7 +114,7 @@
   }
 
   .main-content > .card-list > .card > .inner > i {
-    @apply text-3xl text-indigo-600;
+    @apply text-3xl text-indigo-500;
   }
 
   .main-content > .card-list > .card > .inner > .content {
