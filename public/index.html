@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/tailwind.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Gianlica Napoletano</title>
 </head>
@@ -86,107 +87,203 @@
                             </a>
                         </li>
                     </ul>
-                    <button onclick="show_menu()" id="toggle-menu">
+                    <button onmouseover="show_menu()" id="toggle-menu">
                         <i class="fas fa-bars"></i>
                     </button>
                 </nav>
 
-                <div class="box items-start">
-                    <div class="main-header">
-                        <div class="title">
-                            <h2>
-                                Chi sono
-                            </h2>
-                            <div class="border-bottom bg-indigo-500">
+                <div class="main-col">
+
+                    <div id="chi-sono" class="main-col-item">
+                        <div class="box items-start">
+                            <div class="main-header">
+                                <div class="title">
+                                    <h2>
+                                        Chi sono
+                                    </h2>
+                                    <div class="border-bottom bg-indigo-500">
+                                    </div>
+                                </div>
+                                <div class="subtitle">
+                                    Mi descrivo come una persona tenace, che apprende velocemente e ama il problem
+                                    solving,
+                                    utilizzando soluzioni
+                                    semplici e scalabili.
+                                </div>
                             </div>
                         </div>
-                        <div class="subtitle">
-                            Mi descrivo come una persona tenace, che apprende velocemente e ama il problem solving,
-                            utilizzando soluzioni
-                            semplici e scalabili.
+                        <div class="box bg-gray-200 mt-auto">
+                            <div class="main-content">
+                                <div class="title">
+                                    <h3>
+                                        Cosa Faccio
+                                    </h3>
+                                </div>
+                                <div class="card-list">
+                                    <div class="card">
+                                        <div class="inner">
+                                            <i class="fas fa-laptop-code"></i>
+                                            <div class="content">
+                                                <h4>
+                                                    Web Developer
+                                                </h4>
+                                                <p>
+                                                    In grado di creare applicativi e siti web usando
+                                                    <span>
+                                                        HTML, CSS, JS
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="inner">
+                                            <i class="fas fa-mobile-alt"></i>
+                                            <div class="content">
+                                                <h4>
+                                                    Responsive Design
+                                                </h4>
+                                                <p>
+                                                    In grado di creare applicativi e siti web responsive per i
+                                                    principali
+                                                    dispositivi in commercio:
+                                                    <span>
+                                                        Mobile, Tablet, Desktop
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="inner">
+                                            <i class="fas fa-question-circle"></i>
+                                            <div class="content">
+                                                <h4>
+                                                    Unknown
+                                                </h4>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet <span>consectetur</span>
+                                                    adipisicing elit. Consequuntur explicabo.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="inner">
+                                            <i class="fas fa-question-circle"></i>
+                                            <div class="content">
+                                                <h4>
+                                                    Unknown
+                                                </h4>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet <span>consectetur</span>
+                                                    adipisicing elit. Consequuntur explicabo.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="box bg-gray-200 mt-auto">
-
-                    <div class="main-content">
-
-                        <div class="title">
-                            <h3>
-                                Cosa Faccio
-                            </h3>
+                    <div id="portfolio" class="main-col-item">
+                        <div class="box items-start">
+                            <div class="main-header">
+                                <div class="title">
+                                    <h2>
+                                        Chi sono
+                                    </h2>
+                                    <div class="border-bottom bg-indigo-500">
+                                    </div>
+                                </div>
+                                <div class="subtitle">
+                                    Mi descrivo come una persona tenace, che apprende velocemente e ama il problem
+                                    solving,
+                                    utilizzando soluzioni
+                                    semplici e scalabili.
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-list">
-
-                            <div class="card">
-                                <div class="inner">
-                                    <i class="fas fa-laptop-code"></i>
-                                    <div class="content">
-                                        <h4>
-                                            Web Developer
-                                        </h4>
-                                        <p>
-                                            In grado di creare applicativi e siti web usando
-                                            <span>
-                                                HTML, CSS, JS
-                                            </span>
-                                        </p>
+                        <div class="box bg-gray-200 mt-auto">
+                            <div class="main-content">
+                                <div class="title">
+                                    <h3>
+                                        Cosa Faccio
+                                    </h3>
+                                </div>
+                                <div class="card-list">
+                                    <div class="card">
+                                        <div class="inner">
+                                            <i class="fas fa-laptop-code"></i>
+                                            <div class="content">
+                                                <h4>
+                                                    Web Developer
+                                                </h4>
+                                                <p>
+                                                    In grado di creare applicativi e siti web usando
+                                                    <span>
+                                                        HTML, CSS, JS
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="inner">
+                                            <i class="fas fa-mobile-alt"></i>
+                                            <div class="content">
+                                                <h4>
+                                                    Responsive Design
+                                                </h4>
+                                                <p>
+                                                    In grado di creare applicativi e siti web responsive per i
+                                                    principali
+                                                    dispositivi in commercio:
+                                                    <span>
+                                                        Mobile, Tablet, Desktop
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="inner">
+                                            <i class="fas fa-question-circle"></i>
+                                            <div class="content">
+                                                <h4>
+                                                    Unknown
+                                                </h4>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet <span>consectetur</span>
+                                                    adipisicing elit. Consequuntur explicabo.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="inner">
+                                            <i class="fas fa-question-circle"></i>
+                                            <div class="content">
+                                                <h4>
+                                                    Unknown
+                                                </h4>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet <span>consectetur</span>
+                                                    adipisicing elit. Consequuntur explicabo.
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="inner">
-                                    <i class="fas fa-mobile-alt"></i>
-                                    <div class="content">
-                                        <h4>
-                                            Responsive Design
-                                        </h4>
-                                        <p>
-                                            In grado di creare applicativi e siti web responsive per i principali
-                                            dispositivi in commercio:
-                                            <span>
-                                                Mobile, Tablet, Desktop
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="inner">
-                                    <i class="fas fa-question-circle"></i>
-                                    <div class="content">
-                                        <h4>
-                                            Unknown
-                                        </h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet <span>consectetur</span>
-                                            adipisicing elit. Consequuntur explicabo.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="inner">
-                                    <i class="fas fa-question-circle"></i>
-                                    <div class="content">
-                                        <h4>
-                                            Unknown
-                                        </h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet <span>consectetur</span>
-                                            adipisicing elit. Consequuntur explicabo.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
-
                     </div>
 
+                    <!-- <div id="chi-sono" class="bg-red-400">
+                        
+                    </div> -->
                 </div>
-
             </div>
 
         </div>
