@@ -5,7 +5,7 @@
 @layer components {
 
   body {
-    @apply h-screen bg-fixed bg-gradient-to-br from-blue-300 to-indigo-600 font-mono text-gray-800 dark:text-gray-100 dark:from-gray-700 dark:to-gray-800;
+    @apply h-screen bg-fixed bg-gradient-to-br from-blue-300 to-indigo-600 font-mono text-black dark:text-white dark:from-gray-700 dark:to-gray-800;
   }
 
   .container {
@@ -17,7 +17,7 @@
   }
 
   .col {
-    @apply bg-white dark:bg-gray-800 rounded-3xl overflow-hidden flex flex-col items-start;
+    @apply bg-gray-100 dark:bg-gray-800 rounded-3xl overflow-hidden flex flex-col items-start;
   }
 
   .box {
@@ -33,11 +33,15 @@
   }
 
   .social {
-    /* @apply my-2 text-xl; */
+    @apply my-2 text-xl;
+  }
+
+  .social a {
+    @apply inline-block rounded-full dark:bg-white;
   }
 
   .social i {
-    /* @apply dark:bg-white; */
+    @apply p-2;
   }
 
   .btn {
