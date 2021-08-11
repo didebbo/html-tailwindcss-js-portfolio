@@ -29,7 +29,7 @@
   }
 
   .badge {
-    @apply my-2 py-2 px-4 text-sm bg-gray-200 dark:bg-gray-700 rounded-full;
+    @apply my-2 py-2 px-4 text-sm bg-gray-200 dark:bg-gray-900 rounded-full;
   }
 
   .social {
@@ -37,7 +37,7 @@
   }
 
   .social a {
-    @apply inline-block rounded-full bg-gray-200 dark:bg-gray-700;
+    @apply inline-block rounded-full bg-gray-200 dark:bg-gray-900;
   }
 
   .social i {
@@ -73,7 +73,7 @@
   }
 
   nav > .menu {
-    @apply  flex overflow-hidden w-0 whitespace-nowrap transition-all;
+    @apply  flex items-center overflow-hidden w-0 whitespace-nowrap transition-all;
   }
 
   nav > .menu > li::after {
@@ -82,15 +82,11 @@
   }
 
   nav > .menu.show-menu {
-    @apply w-auto btn bg-indigo-500 dark:bg-gray-600 text-gray-100 dark:text-gray-400 rounded-tr-none rounded-br-none;
-  }
-
-  nav > #theme-mode {
-
+    @apply w-auto btn bg-indigo-500 dark:bg-gray-900 text-gray-100 dark:text-gray-400 rounded-tr-none rounded-br-none;
   }
 
   nav > #toggle-menu {
-    @apply p-2 rounded-full text-gray-100 dark:text-gray-400 bg-indigo-500 dark:bg-gray-600 transition-all;
+    @apply p-2 rounded-full bg-indigo-500 dark:bg-gray-900 transition-all;
   }
 
   nav > #toggle-menu.focus {
@@ -143,11 +139,11 @@
   }
 
   .main-content > .card-list > .card > .inner {
-    @apply p-3 flex bg-gray-50 w-full rounded-2xl;
+    @apply p-3 flex bg-gray-100 dark:bg-gray-800 w-full rounded-2xl;
   }
 
   .main-content > .card-list > .card > .inner > i {
-    @apply text-3xl text-indigo-500;
+    @apply text-3xl text-indigo-500 dark:text-gray-400;
   }
 
   .main-content > .card-list > .card > .inner > .content {
@@ -159,11 +155,11 @@
   }
 
   .main-content > .card-list > .card > .inner > .content > p {
-    @apply text-xs text-gray-600;
+    @apply text-sm;
   }
 
   .main-content > .card-list > .card > .inner > .content > p > span {
-    @apply text-gray-900 font-bold;
+    @apply text-gray-800 dark:text-gray-100 font-bold;
   }
 
 }
