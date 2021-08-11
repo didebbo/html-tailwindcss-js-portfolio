@@ -29,7 +29,7 @@
   }
 
   .badge {
-    @apply my-2 py-2 px-4 text-sm text-gray-600 bg-gray-200 dark:bg-gray-700 dark:text-gray-400 rounded-full;
+    @apply my-2 py-2 px-4 text-sm bg-gray-200 dark:bg-gray-700 rounded-full;
   }
 
   .social {
@@ -41,11 +41,11 @@
   }
 
   .social i {
-    @apply p-2 text-gray-600 dark:text-gray-400;
+    @apply p-2;
   }
 
   .btn {
-    @apply bg-gray-200 text-black py-2 px-4 rounded-full;
+    @apply bg-gray-200 py-2 px-4 rounded-full;
   }
 
   .linkedin-icon {
@@ -78,24 +78,32 @@
 
   nav > .menu > li::after {
     content: "|";
-    @apply text-indigo-700 mr-3;
+    @apply text-indigo-700 dark:text-gray-700 mr-3;
   }
 
   nav > .menu.show-menu {
-    @apply w-auto btn bg-indigo-500 text-white rounded-tr-none rounded-br-none;
+    @apply w-auto btn bg-indigo-500 dark:bg-gray-600 text-gray-100 dark:text-gray-400 rounded-tr-none rounded-br-none;
+  }
+
+  nav > #theme-mode {
+
   }
 
   nav > #toggle-menu {
-    @apply btn text-white bg-indigo-500 transition-all;
+    @apply p-2 rounded-full text-gray-100 dark:text-gray-400 bg-indigo-500 dark:bg-gray-600 transition-all;
   }
 
   nav > #toggle-menu.focus {
     @apply rounded-tl-none rounded-bl-none;
   }
 
+  nav #toggle-menu .toggle-circle {
+    @apply bg-gray-100 dark:bg-gray-400 block w-6 h-6 rounded-full;
+  }
+
   .main-col {
     @apply flex w-full h-full overflow-hidden;
-  }
+  } 
 
   .main-col-item {
     @apply flex flex-col flex-shrink-0 w-full;
@@ -114,7 +122,7 @@
   }
 
   .main-header > .title > .border-bottom {
-    @apply h-1 w-1/2;
+    @apply h-1 w-1/2 bg-indigo-500 dark:bg-gray-600;
   }
 
   .main-header > .subtitle {

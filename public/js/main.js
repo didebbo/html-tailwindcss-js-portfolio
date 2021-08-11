@@ -1,7 +1,7 @@
 // DOM Elements
 const menu = document.querySelector("#menu");
 const toggle_menu = document.querySelector("#toggle-menu");
-const theme_mode = document.querySelector("#theme-mode");
+const theme_mode_icons = document.getElementsByClassName("theme-mode-icon");
 const icon_linkedin = document.getElementsByClassName("linkedin-icon");
 const icon_twitter = document.getElementsByClassName("twitter-icon");
 const icon_instagram = document.getElementsByClassName("instagram-icon");
@@ -9,6 +9,13 @@ const icon_facebook = document.getElementsByClassName("facebook-icon");
 
 // Main
 window.onload = () => {
+    theme_color();
+}
+
+// Actions
+toggle_menu.onclick = () => {
+    if (localStorage.theme === "dark") localStorage.theme = "light";
+    else localStorage.theme = "dark";
     theme_color();
 }
 
@@ -24,39 +31,14 @@ const hide_menu = () => {
 }
 
 const theme_color = () => {
-    if (localStorage.theme === "dark") document.documentElement.classList.add("dark");
-    else document.documentElement.classList.remove("dark");
-    theme_social_icons();
-}
-
-// const theme_social_icons = () => {
-
-//     if (document.documentElement.classList.contains("dark")) {
-//         icon_linkedin[1].classList.remove("hidden");
-//         icon_twitter[1].classList.remove("hidden");
-//         icon_instagram[1].classList.remove("hidden");
-//         icon_facebook[1].classList.remove("hidden");
-
-//         icon_linkedin[0].classList.add("hidden");
-//         icon_twitter[0].classList.add("hidden");
-//         icon_instagram[0].classList.add("hidden");
-//         icon_facebook[0].classList.add("hidden");
-//     }
-//     else {
-//         icon_linkedin[0].classList.remove("hidden");
-//         icon_twitter[0].classList.remove("hidden");
-//         icon_instagram[0].classList.remove("hidden");
-//         icon_facebook[0].classList.remove("hidden");
-
-//         icon_linkedin[1].classList.add("hidden");
-//         icon_twitter[1].classList.add("hidden");
-//         icon_instagram[1].classList.add("hidden");
-//         icon_facebook[1].classList.add("hidden");
-//     }
-// }
-
-theme_mode.onclick = () => {
-    if (localStorage.theme === "dark") localStorage.theme = "light";
-    else localStorage.theme = "dark";
-    theme_color();
+    if (localStorage.theme === "dark") {
+        document.documentElement.classList.add("dark");
+        theme_mode_icons[0].style.display = "none";
+        theme_mode_icons[1].style.display = "inline";
+    }
+    else {
+        document.documentElement.classList.remove("dark");
+        theme_mode_icons[0].style.display = "inline";
+        theme_mode_icons[1].style.display = "none";
+    }
 }
