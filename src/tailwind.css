@@ -5,7 +5,7 @@
 @layer components {
 
   body {
-    @apply h-screen bg-fixed bg-gradient-to-br from-blue-300 to-indigo-600 font-mono text-black dark:text-white dark:from-gray-700 dark:to-gray-800;
+    @apply h-screen bg-fixed bg-gradient-to-br from-blue-300 to-indigo-600 font-mono text-gray-600 dark:text-gray-400 dark:from-gray-700 dark:to-gray-800;
   }
 
   .container {
@@ -29,7 +29,7 @@
   }
 
   .badge {
-    @apply my-2 py-2 px-4 text-sm text-gray-600 bg-gray-200 dark:bg-gray-700 dark:text-gray-100 rounded-full;
+    @apply my-2 py-2 px-4 text-sm text-gray-600 bg-gray-200 dark:bg-gray-700 dark:text-gray-400 rounded-full;
   }
 
   .social {
@@ -37,11 +37,11 @@
   }
 
   .social a {
-    @apply inline-block rounded-full dark:bg-white;
+    @apply inline-block rounded-full bg-gray-200 dark:bg-gray-700;
   }
 
   .social i {
-    @apply p-2;
+    @apply p-2 text-gray-600 dark:text-gray-400;
   }
 
   .btn {
@@ -49,19 +49,19 @@
   }
 
   .linkedin-icon {
-    @apply text-linkedin;
+    @apply hover:text-linkedin dark:hover:text-linkedin;
   }
 
   .twitter-icon {
-    @apply text-twitter;
+    @apply hover:text-twitter dark:hover:text-twitter;
   }
 
   .instagram-icon {
-    @apply text-transparent bg-clip-text bg-gradient-to-tr from-yellow-400 to-pink-600;
+    @apply hover:text-transparent dark:hover:text-transparent bg-clip-text bg-gradient-to-tr hover:from-yellow-400 hover:to-pink-600;
   }
 
   .facebook-icon {
-    @apply text-facebook;
+    @apply hover:text-facebook dark:hover:text-facebook;
   }
 
   .info i {
