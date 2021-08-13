@@ -125,17 +125,44 @@
     @apply text-sm my-3;
   }
 
+  .main-content {
+    @apply w-full;
+  }
+
   .main-content > .title > h3 {
     @apply text-2xl font-bold my-3;
   }
 
-
   .main-content > .card-list {
-    @apply grid grid-cols-2 auto-rows-fr gap-3 w-full;
+    @apply grid grid-cols-2 w-full auto-rows-fr gap-4;
+  }
+
+  .main-content > .project-list {
+    @apply grid grid-cols-3 w-full auto-rows-fr gap-4;
   }
 
   .main-content > .card-list > .card {
     @apply flex flex-row;
+  }
+
+  .main-content > .project-list > .project {
+    @apply flex flex-col items-center;
+  }
+
+  .main-content > .project-list > .project > .prev {
+    @apply w-full h-32 overflow-hidden rounded-2xl border-2 border-indigo-500 dark:border-gray-800;
+  }
+
+  .main-content > .project-list > .project > .prev::before {
+    @apply bg-white text-indigo-500 dark:text-gray-800 text-5xl;
+  }
+
+  .main-content > .project-list > .project > .prev::after {
+    @apply bg-gradient-to-bl from-indigo-300 to-indigo-500 text-gray-100 dark:from-gray-700 dark:to-gray-800 dark:text-gray-400 px-6 rounded-t-2xl;
+  }
+
+  .main-content > .project-list > .project > .prev > img {
+    @apply w-full h-full object-cover object-left-top;
   }
 
   .main-content > .card-list > .card > .inner {

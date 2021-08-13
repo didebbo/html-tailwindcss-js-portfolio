@@ -1,0 +1,51 @@
+.main-content > .project-list > .project > .prev {
+    position: relative;
+}
+
+.main-content > .project-list > .project > .prev::before {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.main-content > .project-list > .project > .prev:hover::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f002";
+    opacity: 0.8;
+}
+
+.main-content > .project-list > .project > .prev::after {
+    display: inline-block;
+    position: absolute;
+    content: "Unkonw";
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+#prj-discord::after{
+    content: "Discord";
+}
+#prj-playstation::after{
+    content: "PlayStation";
+}
+#prj-dropbox::after{
+    content: "Dropbox";
+}
+#prj-spotify::after{
+    content: "Spotify";
+}
+
+#prj-unknown::after {
+    content: "Unknown";
+}
