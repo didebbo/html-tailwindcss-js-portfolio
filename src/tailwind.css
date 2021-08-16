@@ -5,15 +5,15 @@
 @layer components {
 
   body {
-    @apply h-screen bg-fixed bg-gradient-to-br from-blue-300 to-indigo-600 font-mono text-gray-600 dark:text-gray-400 dark:from-gray-700 dark:to-gray-800;
+    @apply flex items-center h-screen bg-fixed bg-gradient-to-br from-blue-300 to-indigo-600 font-mono text-gray-600 dark:text-gray-400 dark:from-gray-700 dark:to-gray-800;
   }
 
   .container {
-    @apply mx-auto h-full flex justify-center items-center;
+    @apply flex h-4/5 justify-center items-center;
   }
 
   .item {
-    @apply flex justify-start w-11/12;
+    @apply flex justify-start max-h-full w-11/12;
   }
 
   .col {
